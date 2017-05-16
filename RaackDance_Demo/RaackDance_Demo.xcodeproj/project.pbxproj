@@ -13,9 +13,14 @@
 		586757AA1ECB159D00FED60C /* RaackDance_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 586757A81ECB159D00FED60C /* RaackDance_Demo.xcdatamodeld */; };
 		586757AC1ECB159D00FED60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586757AB1ECB159D00FED60C /* Assets.xcassets */; };
 		586757AF1ECB159D00FED60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586757AD1ECB159D00FED60C /* LaunchScreen.storyboard */; };
+		586757B71ECB2EFB00FED60C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 586757B61ECB2EFB00FED60C /* GoogleService-Info.plist */; };
+		586757DE1ECB379700FED60C /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586757DC1ECB379700FED60C /* GroceryItem.swift */; };
+		586757DF1ECB379700FED60C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586757DD1ECB379700FED60C /* User.swift */; };
+		CF2E5EFE1DBA85CEBF798751 /* Pods_RaackDance_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4913B4B9B23095C29CD934EC /* Pods_RaackDance_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4913B4B9B23095C29CD934EC /* Pods_RaackDance_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaackDance_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5867579E1ECB159D00FED60C /* RaackDance_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaackDance_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		586757A11ECB159D00FED60C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		586757A31ECB159D00FED60C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		586757AB1ECB159D00FED60C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		586757AE1ECB159D00FED60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		586757B01ECB159D00FED60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		586757B61ECB2EFB00FED60C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		586757DC1ECB379700FED60C /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		586757DD1ECB379700FED60C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6C0797E14F32F232762E0E6C /* Pods-RaackDance_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaackDance_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaackDance_Demo/Pods-RaackDance_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		B7A22ED9F9B7B70459872D9F /* Pods-RaackDance_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaackDance_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaackDance_Demo/Pods-RaackDance_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2E5EFE1DBA85CEBF798751 /* Pods_RaackDance_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				586757A01ECB159D00FED60C /* RaackDance_Demo */,
 				5867579F1ECB159D00FED60C /* Products */,
+				6388968B8BF147A5622CAAC7 /* Pods */,
+				D7C8DBC1F8CA33DF6B611C24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +71,41 @@
 			children = (
 				586757A11ECB159D00FED60C /* AppDelegate.swift */,
 				586757A31ECB159D00FED60C /* ViewController.swift */,
+				586757DB1ECB379700FED60C /* model */,
 				586757A51ECB159D00FED60C /* Main.storyboard */,
 				586757AB1ECB159D00FED60C /* Assets.xcassets */,
 				586757AD1ECB159D00FED60C /* LaunchScreen.storyboard */,
 				586757B01ECB159D00FED60C /* Info.plist */,
+				586757B61ECB2EFB00FED60C /* GoogleService-Info.plist */,
 				586757A81ECB159D00FED60C /* RaackDance_Demo.xcdatamodeld */,
 			);
 			path = RaackDance_Demo;
+			sourceTree = "<group>";
+		};
+		586757DB1ECB379700FED60C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				586757DC1ECB379700FED60C /* GroceryItem.swift */,
+				586757DD1ECB379700FED60C /* User.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		6388968B8BF147A5622CAAC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7A22ED9F9B7B70459872D9F /* Pods-RaackDance_Demo.debug.xcconfig */,
+				6C0797E14F32F232762E0E6C /* Pods-RaackDance_Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7C8DBC1F8CA33DF6B611C24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4913B4B9B23095C29CD934EC /* Pods_RaackDance_Demo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 586757B31ECB159D00FED60C /* Build configuration list for PBXNativeTarget "RaackDance_Demo" */;
 			buildPhases = (
+				9AE0AF358E65204706779011 /* [CP] Check Pods Manifest.lock */,
 				5867579A1ECB159D00FED60C /* Sources */,
 				5867579B1ECB159D00FED60C /* Frameworks */,
 				5867579C1ECB159D00FED60C /* Resources */,
+				044ACB6C5DE4AA4BC3AE80BD /* [CP] Embed Pods Frameworks */,
+				40C63B06EEB860A9BFF0A12F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586757B71ECB2EFB00FED60C /* GoogleService-Info.plist in Resources */,
 				586757AF1ECB159D00FED60C /* LaunchScreen.storyboard in Resources */,
 				586757AC1ECB159D00FED60C /* Assets.xcassets in Resources */,
 				586757A71ECB159D00FED60C /* Main.storyboard in Resources */,
@@ -135,6 +180,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		044ACB6C5DE4AA4BC3AE80BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RaackDance_Demo/Pods-RaackDance_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40C63B06EEB860A9BFF0A12F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RaackDance_Demo/Pods-RaackDance_Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AE0AF358E65204706779011 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5867579A1ECB159D00FED60C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -142,6 +235,8 @@
 			files = (
 				586757A41ECB159D00FED60C /* ViewController.swift in Sources */,
 				586757AA1ECB159D00FED60C /* RaackDance_Demo.xcdatamodeld in Sources */,
+				586757DE1ECB379700FED60C /* GroceryItem.swift in Sources */,
+				586757DF1ECB379700FED60C /* User.swift in Sources */,
 				586757A21ECB159D00FED60C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +360,7 @@
 		};
 		586757B41ECB159D00FED60C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A22ED9F9B7B70459872D9F /* Pods-RaackDance_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4EE7F9W37G;
@@ -278,6 +374,7 @@
 		};
 		586757B51ECB159D00FED60C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C0797E14F32F232762E0E6C /* Pods-RaackDance_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4EE7F9W37G;
@@ -308,6 +405,7 @@
 				586757B51ECB159D00FED60C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
