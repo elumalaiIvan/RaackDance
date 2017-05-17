@@ -16,6 +16,8 @@
 		586757B71ECB2EFB00FED60C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 586757B61ECB2EFB00FED60C /* GoogleService-Info.plist */; };
 		586757DE1ECB379700FED60C /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586757DC1ECB379700FED60C /* GroceryItem.swift */; };
 		586757DF1ECB379700FED60C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586757DD1ECB379700FED60C /* User.swift */; };
+		58CF869F1ECC716800FEC1AF /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CF869E1ECC716800FEC1AF /* iCarousel.m */; };
+		58CF86A11ECC8BFB00FEC1AF /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86A01ECC8BFB00FEC1AF /* RegistrationViewController.swift */; };
 		CF2E5EFE1DBA85CEBF798751 /* Pods_RaackDance_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4913B4B9B23095C29CD934EC /* Pods_RaackDance_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,10 @@
 		586757B61ECB2EFB00FED60C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		586757DC1ECB379700FED60C /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
 		586757DD1ECB379700FED60C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		58CF869C1ECC716700FEC1AF /* RaackDance_Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaackDance_Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		58CF869D1ECC716800FEC1AF /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		58CF869E1ECC716800FEC1AF /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		58CF86A01ECC8BFB00FEC1AF /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		6C0797E14F32F232762E0E6C /* Pods-RaackDance_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaackDance_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaackDance_Demo/Pods-RaackDance_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		B7A22ED9F9B7B70459872D9F /* Pods-RaackDance_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaackDance_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaackDance_Demo/Pods-RaackDance_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +77,9 @@
 			children = (
 				586757A11ECB159D00FED60C /* AppDelegate.swift */,
 				586757A31ECB159D00FED60C /* ViewController.swift */,
+				58CF86A01ECC8BFB00FEC1AF /* RegistrationViewController.swift */,
+				58CF869D1ECC716800FEC1AF /* iCarousel.h */,
+				58CF869E1ECC716800FEC1AF /* iCarousel.m */,
 				586757DB1ECB379700FED60C /* model */,
 				586757A51ECB159D00FED60C /* Main.storyboard */,
 				586757AB1ECB159D00FED60C /* Assets.xcassets */,
@@ -78,6 +87,7 @@
 				586757B01ECB159D00FED60C /* Info.plist */,
 				586757B61ECB2EFB00FED60C /* GoogleService-Info.plist */,
 				586757A81ECB159D00FED60C /* RaackDance_Demo.xcdatamodeld */,
+				58CF869C1ECC716700FEC1AF /* RaackDance_Demo-Bridging-Header.h */,
 			);
 			path = RaackDance_Demo;
 			sourceTree = "<group>";
@@ -144,6 +154,7 @@
 					5867579D1ECB159D00FED60C = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 4EE7F9W37G;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -236,6 +247,8 @@
 				586757A41ECB159D00FED60C /* ViewController.swift in Sources */,
 				586757AA1ECB159D00FED60C /* RaackDance_Demo.xcdatamodeld in Sources */,
 				586757DE1ECB379700FED60C /* GroceryItem.swift in Sources */,
+				58CF869F1ECC716800FEC1AF /* iCarousel.m in Sources */,
+				58CF86A11ECC8BFB00FEC1AF /* RegistrationViewController.swift in Sources */,
 				586757DF1ECB379700FED60C /* User.swift in Sources */,
 				586757A21ECB159D00FED60C /* AppDelegate.swift in Sources */,
 			);
@@ -363,11 +376,14 @@
 			baseConfigurationReference = B7A22ED9F9B7B70459872D9F /* Pods-RaackDance_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4EE7F9W37G;
 				INFOPLIST_FILE = RaackDance_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Photon.RaackDance-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/elumalai_ra/Desktop/Personal/DanceClass/RaackDance/RaackDance_Demo/RaackDance_Demo/RaackDance_Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -377,11 +393,13 @@
 			baseConfigurationReference = 6C0797E14F32F232762E0E6C /* Pods-RaackDance_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4EE7F9W37G;
 				INFOPLIST_FILE = RaackDance_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Photon.RaackDance-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/elumalai_ra/Desktop/Personal/DanceClass/RaackDance/RaackDance_Demo/RaackDance_Demo/RaackDance_Demo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
