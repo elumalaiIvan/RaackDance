@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class ViewController: UIViewController {
+class GalleryViewController: UIViewController {
     //let ref = FIRDatabase.database().reference(withPath: "grocery-items")
     @IBOutlet weak var carousalView: iCarousel!
     
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController:iCarouselDataSource,iCarouselDelegate{
+extension GalleryViewController:iCarouselDataSource,iCarouselDelegate{
     
     
     func numberOfItems(in carousel: iCarousel) -> Int {

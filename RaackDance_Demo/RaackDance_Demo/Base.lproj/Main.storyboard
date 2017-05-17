@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Initial View Controller-->
         <scene sceneID="XJ5-ri-1jx">
             <objects>
-                <viewController id="VQL-Ef-8xK" sceneMemberID="viewController">
+                <viewController id="VQL-Ef-8xK" customClass="InitialViewController" customModule="RaackDance_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CO1-px-saO"/>
                         <viewControllerLayoutGuide type="bottom" id="Uep-8w-ClL"/>
@@ -21,18 +21,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CvY-Ms-VlK">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fashionPictures" translatesAutoresizingMaskIntoConstraints="NO" id="x32-4P-ZBp">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipv-en-Ydr">
-                                <rect key="frame" x="404" y="593" width="217" height="78"/>
+                                <rect key="frame" x="729" y="670" width="295" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Lets get in"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                <state key="normal" title="Lets get in">
+                                    <color key="titleColor" red="0.25980681180953979" green="0.9029572606086731" blue="0.87492477893829346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="qcl-Jh-wyq" kind="show" id="pgB-QU-YXB"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uep-8w-ClL" firstAttribute="top" secondItem="x32-4P-ZBp" secondAttribute="bottom" id="DWn-1B-9VK"/>
+                            <constraint firstAttribute="trailing" secondItem="x32-4P-ZBp" secondAttribute="trailing" id="QH5-5p-U3w"/>
+                            <constraint firstItem="CvY-Ms-VlK" firstAttribute="top" secondItem="eWG-va-52d" secondAttribute="top" id="gv7-4e-E5K"/>
+                            <constraint firstItem="CvY-Ms-VlK" firstAttribute="leading" secondItem="eWG-va-52d" secondAttribute="leading" id="hnF-2i-Ddt"/>
+                            <constraint firstAttribute="trailing" secondItem="CvY-Ms-VlK" secondAttribute="trailing" id="iDM-Az-2rg"/>
+                            <constraint firstItem="Uep-8w-ClL" firstAttribute="top" secondItem="CvY-Ms-VlK" secondAttribute="bottom" id="kCH-2y-Vhx"/>
+                            <constraint firstItem="x32-4P-ZBp" firstAttribute="leading" secondItem="eWG-va-52d" secondAttribute="leading" id="r76-sP-ApU"/>
+                            <constraint firstItem="x32-4P-ZBp" firstAttribute="top" secondItem="eWG-va-52d" secondAttribute="top" id="rfV-Sq-LsD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BGImageView" destination="x32-4P-ZBp" id="XxN-Zm-RUg"/>
+                        <outlet property="webViewBackground" destination="CvY-Ms-VlK" id="ku2-J1-iUL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ysp-vW-NYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +64,7 @@
         <!--Data Source-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RaackDance_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GalleryViewController" customModule="RaackDance_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -50,10 +73,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d4" translatesAutoresizingMaskIntoConstraints="NO" id="10c-OF-h8J">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letDanceImage" translatesAutoresizingMaskIntoConstraints="NO" id="10c-OF-h8J">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWI-nE-R55" customClass="iCarousel">
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWI-nE-R55" customClass="iCarousel">
                                 <rect key="frame" x="0.0" y="20" width="1024" height="699"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -86,7 +109,7 @@
         <!--RegistrationForm-->
         <scene sceneID="qBe-4b-nfs">
             <objects>
-                <viewController id="dIP-c1-Eq5" sceneMemberID="viewController">
+                <viewController id="dIP-c1-Eq5" customClass="RegistrationViewController" customModule="RaackDance_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YPM-Lh-N0l"/>
                         <viewControllerLayoutGuide type="bottom" id="phl-Ug-obC"/>
@@ -95,23 +118,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RegistrationBG" translatesAutoresizingMaskIntoConstraints="NO" id="eFr-xE-LCs">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registration Form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaM-cI-Eze">
-                                <rect key="frame" x="365" y="156" width="294" height="71"/>
+                                <rect key="frame" x="45" y="50" width="430" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                <color key="textColor" red="0.28209364414215088" green="0.54697185754776001" blue="0.09271036833524704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHe-HL-L3U">
-                                <rect key="frame" x="841" y="674" width="149" height="30"/>
+                                <rect key="frame" x="0.0" y="589" width="149" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Terms &amp; condition"/>
+                                <state key="normal" title="Terms &amp; condition">
+                                    <color key="titleColor" red="0.18597385287284851" green="0.70014065504074097" blue="0.64117252826690674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="jg9-gw-Y7e" kind="show" id="a8d-Fr-jG2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqO-I6-LiE">
+                                <rect key="frame" x="852" y="556" width="172" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="submitButton">
+                                    <color key="titleColor" red="0.18597385287284851" green="0.70014065504074097" blue="0.64117252826690674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButtonTapped:" destination="dIP-c1-Eq5" eventType="touchUpInside" id="3WW-7P-qWb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="phl-Ug-obC" firstAttribute="top" secondItem="eFr-xE-LCs" secondAttribute="bottom" id="CCp-sq-EA1"/>
+                            <constraint firstAttribute="trailing" secondItem="eFr-xE-LCs" secondAttribute="trailing" id="e0A-tZ-Iha"/>
+                            <constraint firstItem="eFr-xE-LCs" firstAttribute="top" secondItem="bLg-6Z-Pfg" secondAttribute="top" id="oxv-77-dWE"/>
+                            <constraint firstItem="eFr-xE-LCs" firstAttribute="leading" secondItem="bLg-6Z-Pfg" secondAttribute="leading" id="xqP-AX-Md5"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="RegistrationForm" id="AeY-lR-WEw"/>
                 </viewController>
@@ -119,10 +163,10 @@
             </objects>
             <point key="canvasLocation" x="790.4296875" y="887.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Terms View Controller-->
         <scene sceneID="YTd-P9-hMl">
             <objects>
-                <viewController id="jg9-gw-Y7e" sceneMemberID="viewController">
+                <viewController id="jg9-gw-Y7e" customClass="TermsViewController" customModule="RaackDance_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R7r-0V-QQs"/>
                         <viewControllerLayoutGuide type="bottom" id="AY1-7S-b8T"/>
@@ -135,11 +179,17 @@
                                 <rect key="frame" x="356" y="645" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Agree"/>
+                                <connections>
+                                    <action selector="AgreeButtonTapped:" destination="jg9-gw-Y7e" eventType="touchUpInside" id="his-ql-nIX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wE-rJ-mJI">
                                 <rect key="frame" x="529" y="645" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Not Agree"/>
+                                <connections>
+                                    <action selector="DisAgreeButtonTapped:" destination="jg9-gw-Y7e" eventType="touchUpInside" id="hQU-H9-UUu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -155,6 +205,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qcl-Jh-wyq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="6ur-Ie-PBg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -169,6 +220,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="d4" width="1653" height="1169"/>
+        <image name="RegistrationBG" width="1920" height="1080"/>
+        <image name="fashionPictures" width="598" height="600"/>
+        <image name="letDanceImage" width="800" height="480"/>
+        <image name="submitButton" width="1109" height="1108"/>
     </resources>
 </document>

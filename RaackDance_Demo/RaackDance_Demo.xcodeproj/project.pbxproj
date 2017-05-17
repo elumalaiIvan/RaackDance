@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		586757A21ECB159D00FED60C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586757A11ECB159D00FED60C /* AppDelegate.swift */; };
-		586757A41ECB159D00FED60C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586757A31ECB159D00FED60C /* ViewController.swift */; };
 		586757A71ECB159D00FED60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586757A51ECB159D00FED60C /* Main.storyboard */; };
 		586757AA1ECB159D00FED60C /* RaackDance_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 586757A81ECB159D00FED60C /* RaackDance_Demo.xcdatamodeld */; };
 		586757AC1ECB159D00FED60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586757AB1ECB159D00FED60C /* Assets.xcassets */; };
@@ -16,8 +15,15 @@
 		586757B71ECB2EFB00FED60C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 586757B61ECB2EFB00FED60C /* GoogleService-Info.plist */; };
 		586757DE1ECB379700FED60C /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586757DC1ECB379700FED60C /* GroceryItem.swift */; };
 		586757DF1ECB379700FED60C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586757DD1ECB379700FED60C /* User.swift */; };
-		58CF869F1ECC716800FEC1AF /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CF869E1ECC716800FEC1AF /* iCarousel.m */; };
-		58CF86A11ECC8BFB00FEC1AF /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86A01ECC8BFB00FEC1AF /* RegistrationViewController.swift */; };
+		58CF86A81ECC8E2600FEC1AF /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86A51ECC8E2600FEC1AF /* GalleryViewController.swift */; };
+		58CF86A91ECC8E2600FEC1AF /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86A61ECC8E2600FEC1AF /* InitialViewController.swift */; };
+		58CF86AA1ECC8E2600FEC1AF /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86A71ECC8E2600FEC1AF /* RegistrationViewController.swift */; };
+		58CF86AE1ECC8E6E00FEC1AF /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86AD1ECC8E6E00FEC1AF /* iCarousel.m */; };
+		58CF86B01ECC8ECD00FEC1AF /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86AF1ECC8ECD00FEC1AF /* TermsViewController.swift */; };
+		58CF86B41ECC96F900FEC1AF /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86B21ECC96F900FEC1AF /* SCLAlertView.swift */; };
+		58CF86B51ECC96FA00FEC1AF /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86B31ECC96F900FEC1AF /* SCLExtensions.swift */; };
+		58CF86B71ECC9B0E00FEC1AF /* dance.gif in Resources */ = {isa = PBXBuildFile; fileRef = 58CF86B61ECC9B0E00FEC1AF /* dance.gif */; };
+		58CF86B91ECC9B1F00FEC1AF /* rain.gif in Resources */ = {isa = PBXBuildFile; fileRef = 58CF86B81ECC9B1F00FEC1AF /* rain.gif */; };
 		CF2E5EFE1DBA85CEBF798751 /* Pods_RaackDance_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4913B4B9B23095C29CD934EC /* Pods_RaackDance_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +31,6 @@
 		4913B4B9B23095C29CD934EC /* Pods_RaackDance_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaackDance_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5867579E1ECB159D00FED60C /* RaackDance_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaackDance_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		586757A11ECB159D00FED60C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		586757A31ECB159D00FED60C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		586757A61ECB159D00FED60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		586757A91ECB159D00FED60C /* RaackDance_Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RaackDance_Demo.xcdatamodel; sourceTree = "<group>"; };
 		586757AB1ECB159D00FED60C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,9 +40,16 @@
 		586757DC1ECB379700FED60C /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
 		586757DD1ECB379700FED60C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		58CF869C1ECC716700FEC1AF /* RaackDance_Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaackDance_Demo-Bridging-Header.h"; sourceTree = "<group>"; };
-		58CF869D1ECC716800FEC1AF /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
-		58CF869E1ECC716800FEC1AF /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		58CF86A01ECC8BFB00FEC1AF /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		58CF86A51ECC8E2600FEC1AF /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryViewController.swift; path = RaackDance_Demo/Controllers/GalleryViewController.swift; sourceTree = SOURCE_ROOT; };
+		58CF86A61ECC8E2600FEC1AF /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitialViewController.swift; path = RaackDance_Demo/Controllers/InitialViewController.swift; sourceTree = SOURCE_ROOT; };
+		58CF86A71ECC8E2600FEC1AF /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationViewController.swift; path = RaackDance_Demo/Controllers/RegistrationViewController.swift; sourceTree = SOURCE_ROOT; };
+		58CF86AC1ECC8E6E00FEC1AF /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		58CF86AD1ECC8E6E00FEC1AF /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		58CF86AF1ECC8ECD00FEC1AF /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsViewController.swift; path = RaackDance_Demo/Controllers/TermsViewController.swift; sourceTree = SOURCE_ROOT; };
+		58CF86B21ECC96F900FEC1AF /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		58CF86B31ECC96F900FEC1AF /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
+		58CF86B61ECC9B0E00FEC1AF /* dance.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dance.gif; sourceTree = "<group>"; };
+		58CF86B81ECC9B1F00FEC1AF /* rain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rain.gif; sourceTree = "<group>"; };
 		6C0797E14F32F232762E0E6C /* Pods-RaackDance_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaackDance_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaackDance_Demo/Pods-RaackDance_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		B7A22ED9F9B7B70459872D9F /* Pods-RaackDance_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaackDance_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaackDance_Demo/Pods-RaackDance_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,11 +87,11 @@
 		586757A01ECB159D00FED60C /* RaackDance_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				58CF86B81ECC9B1F00FEC1AF /* rain.gif */,
 				586757A11ECB159D00FED60C /* AppDelegate.swift */,
-				586757A31ECB159D00FED60C /* ViewController.swift */,
-				58CF86A01ECC8BFB00FEC1AF /* RegistrationViewController.swift */,
-				58CF869D1ECC716800FEC1AF /* iCarousel.h */,
-				58CF869E1ECC716800FEC1AF /* iCarousel.m */,
+				58CF86B61ECC9B0E00FEC1AF /* dance.gif */,
+				58CF86AB1ECC8E6E00FEC1AF /* ExternalFrameworks */,
+				58CF86A41ECC8E2600FEC1AF /* Controllers */,
 				586757DB1ECB379700FED60C /* model */,
 				586757A51ECB159D00FED60C /* Main.storyboard */,
 				586757AB1ECB159D00FED60C /* Assets.xcassets */,
@@ -99,6 +111,28 @@
 				586757DD1ECB379700FED60C /* User.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		58CF86A41ECC8E2600FEC1AF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58CF86A61ECC8E2600FEC1AF /* InitialViewController.swift */,
+				58CF86A51ECC8E2600FEC1AF /* GalleryViewController.swift */,
+				58CF86AF1ECC8ECD00FEC1AF /* TermsViewController.swift */,
+				58CF86A71ECC8E2600FEC1AF /* RegistrationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		58CF86AB1ECC8E6E00FEC1AF /* ExternalFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58CF86B21ECC96F900FEC1AF /* SCLAlertView.swift */,
+				58CF86B31ECC96F900FEC1AF /* SCLExtensions.swift */,
+				58CF86AC1ECC8E6E00FEC1AF /* iCarousel.h */,
+				58CF86AD1ECC8E6E00FEC1AF /* iCarousel.m */,
+			);
+			path = ExternalFrameworks;
 			sourceTree = "<group>";
 		};
 		6388968B8BF147A5622CAAC7 /* Pods */ = {
@@ -182,6 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58CF86B71ECC9B0E00FEC1AF /* dance.gif in Resources */,
+				58CF86B91ECC9B1F00FEC1AF /* rain.gif in Resources */,
 				586757B71ECB2EFB00FED60C /* GoogleService-Info.plist in Resources */,
 				586757AF1ECB159D00FED60C /* LaunchScreen.storyboard in Resources */,
 				586757AC1ECB159D00FED60C /* Assets.xcassets in Resources */,
@@ -244,11 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				586757A41ECB159D00FED60C /* ViewController.swift in Sources */,
+				58CF86B51ECC96FA00FEC1AF /* SCLExtensions.swift in Sources */,
 				586757AA1ECB159D00FED60C /* RaackDance_Demo.xcdatamodeld in Sources */,
+				58CF86A91ECC8E2600FEC1AF /* InitialViewController.swift in Sources */,
+				58CF86B41ECC96F900FEC1AF /* SCLAlertView.swift in Sources */,
+				58CF86AA1ECC8E2600FEC1AF /* RegistrationViewController.swift in Sources */,
 				586757DE1ECB379700FED60C /* GroceryItem.swift in Sources */,
-				58CF869F1ECC716800FEC1AF /* iCarousel.m in Sources */,
-				58CF86A11ECC8BFB00FEC1AF /* RegistrationViewController.swift in Sources */,
+				58CF86B01ECC8ECD00FEC1AF /* TermsViewController.swift in Sources */,
+				58CF86A81ECC8E2600FEC1AF /* GalleryViewController.swift in Sources */,
+				58CF86AE1ECC8E6E00FEC1AF /* iCarousel.m in Sources */,
 				586757DF1ECB379700FED60C /* User.swift in Sources */,
 				586757A21ECB159D00FED60C /* AppDelegate.swift in Sources */,
 			);
