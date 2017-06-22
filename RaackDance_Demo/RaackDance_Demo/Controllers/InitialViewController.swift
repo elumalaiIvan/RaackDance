@@ -14,7 +14,7 @@ class InitialViewController: UIViewController {
     @IBOutlet weak var BGImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpTheBackground()
+        //setUpTheBackground()
 
         // Do any additional setup after loading the view.
     }

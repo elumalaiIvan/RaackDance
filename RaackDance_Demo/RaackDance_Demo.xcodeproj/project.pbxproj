@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0168B4F71EFBA27900A9FE7B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0168B4F61EFBA27900A9FE7B /* Student.swift */; };
 		586757A21ECB159D00FED60C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586757A11ECB159D00FED60C /* AppDelegate.swift */; };
 		586757A71ECB159D00FED60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586757A51ECB159D00FED60C /* Main.storyboard */; };
 		586757AA1ECB159D00FED60C /* RaackDance_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 586757A81ECB159D00FED60C /* RaackDance_Demo.xcdatamodeld */; };
@@ -22,12 +23,11 @@
 		58CF86B01ECC8ECD00FEC1AF /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86AF1ECC8ECD00FEC1AF /* TermsViewController.swift */; };
 		58CF86B41ECC96F900FEC1AF /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86B21ECC96F900FEC1AF /* SCLAlertView.swift */; };
 		58CF86B51ECC96FA00FEC1AF /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86B31ECC96F900FEC1AF /* SCLExtensions.swift */; };
-		58CF86B71ECC9B0E00FEC1AF /* dance.gif in Resources */ = {isa = PBXBuildFile; fileRef = 58CF86B61ECC9B0E00FEC1AF /* dance.gif */; };
-		58CF86B91ECC9B1F00FEC1AF /* rain.gif in Resources */ = {isa = PBXBuildFile; fileRef = 58CF86B81ECC9B1F00FEC1AF /* rain.gif */; };
 		CF2E5EFE1DBA85CEBF798751 /* Pods_RaackDance_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4913B4B9B23095C29CD934EC /* Pods_RaackDance_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0168B4F61EFBA27900A9FE7B /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		4913B4B9B23095C29CD934EC /* Pods_RaackDance_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaackDance_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5867579E1ECB159D00FED60C /* RaackDance_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaackDance_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		586757A11ECB159D00FED60C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,8 +48,6 @@
 		58CF86AF1ECC8ECD00FEC1AF /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsViewController.swift; path = RaackDance_Demo/Controllers/TermsViewController.swift; sourceTree = SOURCE_ROOT; };
 		58CF86B21ECC96F900FEC1AF /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		58CF86B31ECC96F900FEC1AF /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
-		58CF86B61ECC9B0E00FEC1AF /* dance.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dance.gif; sourceTree = "<group>"; };
-		58CF86B81ECC9B1F00FEC1AF /* rain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rain.gif; sourceTree = "<group>"; };
 		6C0797E14F32F232762E0E6C /* Pods-RaackDance_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaackDance_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaackDance_Demo/Pods-RaackDance_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		B7A22ED9F9B7B70459872D9F /* Pods-RaackDance_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaackDance_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaackDance_Demo/Pods-RaackDance_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,9 +85,7 @@
 		586757A01ECB159D00FED60C /* RaackDance_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				58CF86B81ECC9B1F00FEC1AF /* rain.gif */,
 				586757A11ECB159D00FED60C /* AppDelegate.swift */,
-				58CF86B61ECC9B0E00FEC1AF /* dance.gif */,
 				58CF86AB1ECC8E6E00FEC1AF /* ExternalFrameworks */,
 				58CF86A41ECC8E2600FEC1AF /* Controllers */,
 				586757DB1ECB379700FED60C /* model */,
@@ -109,6 +105,7 @@
 			children = (
 				586757DC1ECB379700FED60C /* GroceryItem.swift */,
 				586757DD1ECB379700FED60C /* User.swift */,
+				0168B4F61EFBA27900A9FE7B /* Student.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -187,7 +184,7 @@
 				TargetAttributes = {
 					5867579D1ECB159D00FED60C = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 4EE7F9W37G;
+						DevelopmentTeam = T34HR42URX;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -216,8 +213,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58CF86B71ECC9B0E00FEC1AF /* dance.gif in Resources */,
-				58CF86B91ECC9B1F00FEC1AF /* rain.gif in Resources */,
 				586757B71ECB2EFB00FED60C /* GoogleService-Info.plist in Resources */,
 				586757AF1ECB159D00FED60C /* LaunchScreen.storyboard in Resources */,
 				586757AC1ECB159D00FED60C /* Assets.xcassets in Resources */,
@@ -287,6 +282,7 @@
 				58CF86AA1ECC8E2600FEC1AF /* RegistrationViewController.swift in Sources */,
 				586757DE1ECB379700FED60C /* GroceryItem.swift in Sources */,
 				58CF86B01ECC8ECD00FEC1AF /* TermsViewController.swift in Sources */,
+				0168B4F71EFBA27900A9FE7B /* Student.swift in Sources */,
 				58CF86A81ECC8E2600FEC1AF /* GalleryViewController.swift in Sources */,
 				58CF86AE1ECC8E6E00FEC1AF /* iCarousel.m in Sources */,
 				586757DF1ECB379700FED60C /* User.swift in Sources */,
@@ -357,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -417,12 +413,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 4EE7F9W37G;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = T34HR42URX;
 				INFOPLIST_FILE = RaackDance_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Photon.RaackDance-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/elumalai_ra/Desktop/Personal/DanceClass/RaackDance/RaackDance_Demo/RaackDance_Demo/RaackDance_Demo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/aravind_l/Desktop/Personal/RaackDance/RaackDance_Demo/RaackDance_Demo/RaackDance_Demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -434,12 +432,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 4EE7F9W37G;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = T34HR42URX;
 				INFOPLIST_FILE = RaackDance_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Photon.RaackDance-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/elumalai_ra/Desktop/Personal/DanceClass/RaackDance/RaackDance_Demo/RaackDance_Demo/RaackDance_Demo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/aravind_l/Desktop/Personal/RaackDance/RaackDance_Demo/RaackDance_Demo/RaackDance_Demo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
