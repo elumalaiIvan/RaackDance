@@ -35,6 +35,7 @@ struct Student {
         
         let studentRef = reference.child(key.lowercased())
         studentRef.setValue(self.toAnyObject())
+        
     }
     
     private mutating func generateKeyforTheStudent(){

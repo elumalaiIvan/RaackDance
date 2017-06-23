@@ -121,56 +121,56 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile Number :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Zf-ub-8Vi">
-                                <rect key="frame" x="20" y="233" width="137" height="19"/>
+                                <rect key="frame" x="20" y="275" width="137" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                 <color key="textColor" red="0.28209364409999999" green="0.54697185749999999" blue="0.092710368340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IjU-1G-jli">
-                                <rect key="frame" x="261" y="227" width="197" height="30"/>
+                                <rect key="frame" x="261" y="269" width="197" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mail ID :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgX-6G-bLA">
-                                <rect key="frame" x="20" y="287" width="76" height="19"/>
+                                <rect key="frame" x="20" y="329" width="76" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                 <color key="textColor" red="0.28209364409999999" green="0.54697185749999999" blue="0.092710368340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5K-iI-nrn">
-                                <rect key="frame" x="261" y="276" width="197" height="30"/>
+                                <rect key="frame" x="261" y="318" width="197" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Class Type :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDs-Er-3hc">
-                                <rect key="frame" x="20" y="343" width="102" height="19"/>
+                                <rect key="frame" x="20" y="385" width="102" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                 <color key="textColor" red="0.28209364409999999" green="0.54697185749999999" blue="0.092710368340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mcV-KR-rdc">
-                                <rect key="frame" x="261" y="332" width="197" height="30"/>
+                                <rect key="frame" x="261" y="374" width="197" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uh3-PP-rMZ">
-                                <rect key="frame" x="20" y="180" width="58" height="19"/>
+                                <rect key="frame" x="20" y="222" width="58" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                 <color key="textColor" red="0.28209364409999999" green="0.54697185749999999" blue="0.092710368340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registration Form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaM-cI-Eze">
-                                <rect key="frame" x="45" y="50" width="430" height="71"/>
+                                <rect key="frame" x="161" y="33" width="430" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                 <color key="textColor" red="0.28209364414215088" green="0.54697185754776001" blue="0.09271036833524704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -187,20 +187,51 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EiU-Mo-G1f">
-                                <rect key="frame" x="261" y="175" width="197" height="30"/>
+                                <rect key="frame" x="261" y="217" width="197" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqO-I6-LiE">
-                                <rect key="frame" x="148" y="438" width="164" height="71"/>
+                                <rect key="frame" x="148" y="480" width="164" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="submitButton">
                                     <color key="titleColor" red="0.18597385287284851" green="0.70014065504074097" blue="0.64117252826690674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="submitButtonTapped:" destination="dIP-c1-Eq5" eventType="touchUpInside" id="3WW-7P-qWb"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g8Y-4w-MNw">
+                                <rect key="frame" x="713" y="65" width="204" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0c-Vz-Y1t">
+                                        <rect key="frame" x="8" y="4" width="88" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Delete All"/>
+                                        <connections>
+                                            <action selector="deleteAllButtonTapped:" destination="dIP-c1-Eq5" eventType="touchUpInside" id="cbM-JR-7cz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lq-sY-x6K">
+                                        <rect key="frame" x="104" y="4" width="92" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Send XL"/>
+                                        <connections>
+                                            <action selector="sendXLButtonTapped:" destination="dIP-c1-Eq5" eventType="touchUpInside" id="Ugl-MR-9Io"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.89227771529691113" blue="0.71639310892342722" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2b-aG-tSh">
+                                <rect key="frame" x="9" y="6" width="125" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="noImage"/>
+                                <connections>
+                                    <action selector="profilePicButtonTapped:" destination="dIP-c1-Eq5" eventType="touchUpInside" id="4uI-hw-k5O"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -218,6 +249,7 @@
                         <outlet property="mailIDTF" destination="j5K-iI-nrn" id="gZq-hm-IjV"/>
                         <outlet property="mobileNumberTF" destination="IjU-1G-jli" id="ZFs-Ak-etZ"/>
                         <outlet property="nameTF" destination="EiU-Mo-G1f" id="Rua-As-10R"/>
+                        <outlet property="profilePicButton" destination="i2b-aG-tSh" id="88k-jn-yFE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olf-Vd-H26" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -284,6 +316,7 @@
         <image name="RegistrationBG" width="1920" height="1080"/>
         <image name="fashionPictures" width="598" height="600"/>
         <image name="letDanceImage" width="800" height="480"/>
+        <image name="noImage" width="201" height="251"/>
         <image name="submitButton" width="1109" height="1108"/>
     </resources>
 </document>
