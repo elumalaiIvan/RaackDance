@@ -37,6 +37,9 @@ class RegistrationViewController: UIViewController {
 
     @IBAction func submitButtonTapped(_ sender: UIButton) {
         
+        SwiftSpinner.show("Connecting to satellite...")
+
+        
         guard let name = nameTF.text, name != "" else {
             //alert 
             showAlert("Enter the name")
@@ -66,9 +69,10 @@ class RegistrationViewController: UIViewController {
             }else{
                 student.profileUrl = downloadURLString!
             }
+            
             student.save()
-        }
 
+        
     }
     
     func uploadProfileforTheStudent(studentKey:String,completion: @escaping (_ url: String?, _ error:Error?) -> Void) {

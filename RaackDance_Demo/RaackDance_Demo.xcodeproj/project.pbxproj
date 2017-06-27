@@ -17,6 +17,7 @@
 		586757B71ECB2EFB00FED60C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 586757B61ECB2EFB00FED60C /* GoogleService-Info.plist */; };
 		586757DE1ECB379700FED60C /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586757DC1ECB379700FED60C /* GroceryItem.swift */; };
 		586757DF1ECB379700FED60C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586757DD1ECB379700FED60C /* User.swift */; };
+		58A579D11F0299D0004635E2 /* Calender Source in Resources */ = {isa = PBXBuildFile; fileRef = 58A579D01F0299D0004635E2 /* Calender Source */; };
 		58CF86A81ECC8E2600FEC1AF /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86A51ECC8E2600FEC1AF /* GalleryViewController.swift */; };
 		58CF86A91ECC8E2600FEC1AF /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86A61ECC8E2600FEC1AF /* InitialViewController.swift */; };
 		58CF86AA1ECC8E2600FEC1AF /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86A71ECC8E2600FEC1AF /* RegistrationViewController.swift */; };
@@ -24,6 +25,7 @@
 		58CF86B01ECC8ECD00FEC1AF /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86AF1ECC8ECD00FEC1AF /* TermsViewController.swift */; };
 		58CF86B41ECC96F900FEC1AF /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86B21ECC96F900FEC1AF /* SCLAlertView.swift */; };
 		58CF86B51ECC96FA00FEC1AF /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF86B31ECC96F900FEC1AF /* SCLExtensions.swift */; };
+		58D656E71F0275B000AC515A /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D656E61F0275B000AC515A /* SwiftSpinner.swift */; };
 		CF2E5EFE1DBA85CEBF798751 /* Pods_RaackDance_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4913B4B9B23095C29CD934EC /* Pods_RaackDance_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,7 @@
 		586757B61ECB2EFB00FED60C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		586757DC1ECB379700FED60C /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
 		586757DD1ECB379700FED60C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		58A579D01F0299D0004635E2 /* Calender Source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Calender Source"; sourceTree = "<group>"; };
 		58CF869C1ECC716700FEC1AF /* RaackDance_Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RaackDance_Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		58CF86A51ECC8E2600FEC1AF /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryViewController.swift; path = RaackDance_Demo/Controllers/GalleryViewController.swift; sourceTree = SOURCE_ROOT; };
 		58CF86A61ECC8E2600FEC1AF /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitialViewController.swift; path = RaackDance_Demo/Controllers/InitialViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -50,6 +53,8 @@
 		58CF86AF1ECC8ECD00FEC1AF /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsViewController.swift; path = RaackDance_Demo/Controllers/TermsViewController.swift; sourceTree = SOURCE_ROOT; };
 		58CF86B21ECC96F900FEC1AF /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
 		58CF86B31ECC96F900FEC1AF /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
+		58D656E51F0275B000AC515A /* SwiftSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftSpinner.h; sourceTree = "<group>"; };
+		58D656E61F0275B000AC515A /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		6C0797E14F32F232762E0E6C /* Pods-RaackDance_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaackDance_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RaackDance_Demo/Pods-RaackDance_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		B7A22ED9F9B7B70459872D9F /* Pods-RaackDance_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RaackDance_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RaackDance_Demo/Pods-RaackDance_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +131,9 @@
 		58CF86AB1ECC8E6E00FEC1AF /* ExternalFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58A579D01F0299D0004635E2 /* Calender Source */,
+				58D656E51F0275B000AC515A /* SwiftSpinner.h */,
+				58D656E61F0275B000AC515A /* SwiftSpinner.swift */,
 				58CF86B21ECC96F900FEC1AF /* SCLAlertView.swift */,
 				58CF86B31ECC96F900FEC1AF /* SCLExtensions.swift */,
 				58CF86AC1ECC8E6E00FEC1AF /* iCarousel.h */,
@@ -220,6 +228,7 @@
 				586757AF1ECB159D00FED60C /* LaunchScreen.storyboard in Resources */,
 				586757AC1ECB159D00FED60C /* Assets.xcassets in Resources */,
 				586757A71ECB159D00FED60C /* Main.storyboard in Resources */,
+				58A579D11F0299D0004635E2 /* Calender Source in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +290,7 @@
 				58CF86B51ECC96FA00FEC1AF /* SCLExtensions.swift in Sources */,
 				586757AA1ECB159D00FED60C /* RaackDance_Demo.xcdatamodeld in Sources */,
 				58CF86A91ECC8E2600FEC1AF /* InitialViewController.swift in Sources */,
+				58D656E71F0275B000AC515A /* SwiftSpinner.swift in Sources */,
 				58CF86B41ECC96F900FEC1AF /* SCLAlertView.swift in Sources */,
 				58CF86AA1ECC8E2600FEC1AF /* RegistrationViewController.swift in Sources */,
 				586757DE1ECB379700FED60C /* GroceryItem.swift in Sources */,
