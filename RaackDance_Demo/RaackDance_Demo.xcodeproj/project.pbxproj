@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0168B4F71EFBA27900A9FE7B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0168B4F61EFBA27900A9FE7B /* Student.swift */; };
-		01834E4E1EFD591700EB7DAB /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01834E4D1EFD591700EB7DAB /* CameraHandler.swift */; };
 		01834E501EFD596600EB7DAB /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01834E4F1EFD596600EB7DAB /* CameraHandler.swift */; };
 		586757A21ECB159D00FED60C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586757A11ECB159D00FED60C /* AppDelegate.swift */; };
 		586757A71ECB159D00FED60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 586757A51ECB159D00FED60C /* Main.storyboard */; };
@@ -30,8 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0168B4F61EFBA27900A9FE7B /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
-		01834E4D1EFD591700EB7DAB /* CameraHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
-		01834E4F1EFD596600EB7DAB /* CameraHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
+		01834E4F1EFD596600EB7DAB /* CameraHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraHandler.swift; path = ../Controllers/CameraHandler.swift; sourceTree = "<group>"; };
 		4913B4B9B23095C29CD934EC /* Pods_RaackDance_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RaackDance_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5867579E1ECB159D00FED60C /* RaackDance_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaackDance_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		586757A11ECB159D00FED60C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 				58CF86A51ECC8E2600FEC1AF /* GalleryViewController.swift */,
 				58CF86AF1ECC8ECD00FEC1AF /* TermsViewController.swift */,
 				58CF86A71ECC8E2600FEC1AF /* RegistrationViewController.swift */,
-				01834E4F1EFD596600EB7DAB /* CameraHandler.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -133,7 +130,7 @@
 				58CF86B31ECC96F900FEC1AF /* SCLExtensions.swift */,
 				58CF86AC1ECC8E6E00FEC1AF /* iCarousel.h */,
 				58CF86AD1ECC8E6E00FEC1AF /* iCarousel.m */,
-				01834E4D1EFD591700EB7DAB /* CameraHandler.swift */,
+				01834E4F1EFD596600EB7DAB /* CameraHandler.swift */,
 			);
 			path = ExternalFrameworks;
 			sourceTree = "<group>";
@@ -289,7 +286,6 @@
 				586757DE1ECB379700FED60C /* GroceryItem.swift in Sources */,
 				58CF86B01ECC8ECD00FEC1AF /* TermsViewController.swift in Sources */,
 				01834E501EFD596600EB7DAB /* CameraHandler.swift in Sources */,
-				01834E4E1EFD591700EB7DAB /* CameraHandler.swift in Sources */,
 				0168B4F71EFBA27900A9FE7B /* Student.swift in Sources */,
 				58CF86A81ECC8E2600FEC1AF /* GalleryViewController.swift in Sources */,
 				58CF86AE1ECC8E6E00FEC1AF /* iCarousel.m in Sources */,

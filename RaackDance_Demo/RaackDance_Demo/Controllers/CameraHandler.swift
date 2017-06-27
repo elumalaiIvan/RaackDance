@@ -26,7 +26,7 @@ class CameraHandler: NSObject {
         delegate = delegate_
     }
     
-    func getPhotoLibraryOn(_ onVC: UIViewController, canEdit: Bool) {
+    func getPhotoLibraryOn(_ onVC: UIViewController, canEdit: Bool = true) {
         
         if !isPhotoLibraryAvailable && !isSavedPhotoAlbumAvailable { return }
         let type = kUTTypeImage as String
@@ -55,7 +55,7 @@ class CameraHandler: NSObject {
         onVC.present(imagePicker, animated: true, completion: nil)
     }
     
-    func getCameraOn(_ onVC: UIViewController, canEdit: Bool) {
+    func getCameraOn(_ onVC: UIViewController, canEdit: Bool = true) {
         
         if !isCameraAvailable { return }
         let type1 = kUTTypeImage as String
