@@ -22,21 +22,33 @@ struct Student {
     }()
     var classType: String
     var key:String
-    var profileUrl:String
+    var profileUrl:String = ""
     
-    init(name: String, mobileNumber: String, mailId: String, profileURL:String = "", classType: String = "Fork") {
+    init(name: String, mobileNumber: String, mailId: String, classType: String = "Fork") {
         self.key = "\(name)\(mobileNumber)"
         self.name = name
         self.mobileNumber = mobileNumber
         self.mailId = mailId
         self.classType = classType
-        self.profileUrl = profileURL
     }
     
     mutating func save(){
         
         let studentRef = reference.child(key.lowercased())
-        studentRef.setValue(self.toAnyObject())
+        
+        studentRef.setValue(self.toAnyObject()) { (error, studentRef) in
+            
+            if error == nil {
+                
+                print("student data saved successfully")
+                
+            }else{
+                
+                print("error observed \(String(describing: error?.localizedDescription))")
+                
+            }
+            
+        }
         
     }
     
@@ -58,7 +70,8 @@ struct Student {
             "mobileNumber": mobileNumber,
             "mailId": mailId,
             "classType":classType,
-            "address":["firstLine":name,"secondName":mobileNumber]
+            "address":["firstLine":name,"secondName":mobileNumber],
+            "profileURL":profileUrl
         ]
     }
     

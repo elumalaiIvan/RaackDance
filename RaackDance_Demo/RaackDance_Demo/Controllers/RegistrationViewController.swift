@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseStorage
 
+
 class RegistrationViewController: UIViewController {
     
     @IBOutlet weak var nameTF: UITextField!
@@ -57,41 +58,49 @@ class RegistrationViewController: UIViewController {
             return
         }
         
-        uploadMedia { url in
+        var student = Student(name: name, mobileNumber: mobileNumber, mailId: mailID)
+        uploadProfileforTheStudent(studentKey: student.key) { (downloadURLString,error) in
             
-            if let url = url {
-                
-                var student = Student(name: name, mobileNumber: mobileNumber, mailId: mailID, profileURL:url)
-                student.save()
+            if error != nil{
+                print("error occured while savinf profile image")
             }else{
-                
-                var student = Student(name: name, mobileNumber: mobileNumber, mailId: mailID)
-                student.save()
+                student.profileUrl = downloadURLString!
             }
+            student.save()
         }
+
     }
     
-    
-    func uploadMedia(completion: @escaping (_ url: String?) -> Void) {
+    func uploadProfileforTheStudent(studentKey:String,completion: @escaping (_ url: String?, _ error:Error?) -> Void) {
         
-        let storageRef = FIRStorage.storage().reference().child("myImage.png")
-        
-        if let uploadedImage = self.profilePicButton.imageView?.image {
+        if let profileImage = profilePicButton.imageView?.image{
             
-            if let uploadData = UIImagePNGRepresentation(uploadedImage) {
-                storageRef.put(uploadData, metadata: nil) { (metadata, error) in
-                    if error != nil {
-                        print("error")
-                        completion(nil)
-                    } else {
+            let data = UIImageJPEGRepresentation(profileImage, 0.8)
+            
+            
+            let storageRef = FIRStorage.storage().reference(forURL: "gs://raackdance-c5b68.appspot.com/profiles/\(studentKey).jpg")
+            
+            storageRef.put(data!, metadata: nil, completion: { (metaData, error) in
+                
+                if error == nil{
+                    print("save success")
+                    if let downloadedURLString = metaData?.downloadURL()?.absoluteString {
                         
-                        completion((metadata?.downloadURL()?.absoluteString)!)
-                        // your uploaded photo url.
+                   completion(downloadedURLString,nil)
+                        
                     }
-                  }
+                    
+                }else{
+                    
+                    completion(nil,error)
+                    print("error occured while saving data \(String(describing: error?.localizedDescription))")
+                    
                 }
-              }
-         }
+             })
+
+           }
+        
+        }
     
     @IBAction func profilePicButtonTapped(_ sender: UIButton) {
         
@@ -166,9 +175,17 @@ class RegistrationViewController: UIViewController {
         
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
             
-            let image = info[UIImagePickerControllerEditedImage] as! UIImage
-            profilePicButton.setImage(image, for: .normal)
             
+            if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+                
+                
+                profilePicButton.setImage(image, for: .normal)
+                
+                
+            } else{
+                print("Something went wrong")
+            }
+           
             // image is our desired image
             picker.dismiss(animated: true, completion: nil)
         }

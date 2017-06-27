@@ -25,11 +25,15 @@ PODS:
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
   - GTMSessionFetcher/Core (1.1.9)
+  - PopupDialog (0.5.4)
+  - SwiftSpinner (1.2.1)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - PopupDialog
+  - SwiftSpinner
 
 SPEC CHECKSUMS:
   Firebase: 4b66b5b59c43edac745b87f0c87e42cdd0279c13
@@ -40,7 +44,9 @@ SPEC CHECKSUMS:
   FirebaseStorage: a5c55b23741a49a72af8f30f95b3bb5ddbeda12d
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
+  PopupDialog: 75cf955693590b0cb2fdde00223fb65d99c57247
+  SwiftSpinner: 62a28bbb4035f252a1e91b0e17fc40bdbbfa0aab
 
-PODFILE CHECKSUM: 27cbd296e2492523750e97a0c38a4388b8d4faa7
+PODFILE CHECKSUM: 94f8d4b539746ed1f30eeda8e483b6fae2f3f81e
 
 COCOAPODS: 1.2.1
