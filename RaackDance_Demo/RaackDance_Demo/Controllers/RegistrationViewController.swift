@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseStorage
 
 class RegistrationViewController: UIViewController {
     
@@ -56,9 +57,41 @@ class RegistrationViewController: UIViewController {
             return
         }
         
-        var student = Student(name: name, mobileNumber: mobileNumber, mailId: mailID)
-        student.save()
+        uploadMedia { url in
+            
+            if let url = url {
+                
+                var student = Student(name: name, mobileNumber: mobileNumber, mailId: mailID, profileURL:url)
+                student.save()
+            }else{
+                
+                var student = Student(name: name, mobileNumber: mobileNumber, mailId: mailID)
+                student.save()
+            }
+        }
     }
+    
+    
+    func uploadMedia(completion: @escaping (_ url: String?) -> Void) {
+        
+        let storageRef = FIRStorage.storage().reference().child("myImage.png")
+        
+        if let uploadedImage = self.profilePicButton.imageView?.image {
+            
+            if let uploadData = UIImagePNGRepresentation(uploadedImage) {
+                storageRef.put(uploadData, metadata: nil) { (metadata, error) in
+                    if error != nil {
+                        print("error")
+                        completion(nil)
+                    } else {
+                        
+                        completion((metadata?.downloadURL()?.absoluteString)!)
+                        // your uploaded photo url.
+                    }
+                  }
+                }
+              }
+         }
     
     @IBAction func profilePicButtonTapped(_ sender: UIButton) {
         

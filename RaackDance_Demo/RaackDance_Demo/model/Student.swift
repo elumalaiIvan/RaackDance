@@ -22,13 +22,15 @@ struct Student {
     }()
     var classType: String
     var key:String
+    var profileUrl:String
     
-    init(name: String, mobileNumber: String, mailId: String, classType: String = "Fork") {
+    init(name: String, mobileNumber: String, mailId: String, profileURL:String = "", classType: String = "Fork") {
         self.key = "\(name)\(mobileNumber)"
         self.name = name
         self.mobileNumber = mobileNumber
         self.mailId = mailId
         self.classType = classType
+        self.profileUrl = profileURL
     }
     
     mutating func save(){
